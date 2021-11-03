@@ -1,33 +1,47 @@
-DownloadWithAria2
+# DownloadWithAria2
+
 部署于KVM，通过爬虫爬取磁力，通过Request提交至Aria2
-设置
+
+## 设置
+
 1、必须安装好Aria2
 2、必须部署好Rclone，注意估量任务量
+
 参考：
-Aria2 + Rclone 实现 OneDrive、Google Drive 等网盘离线下载
+
+[Aria2 + Rclone 实现 OneDrive、Google Drive 等网盘离线下载](https://p3terx.com/archives/offline-download-of-onedrive-gdrive.html)
+
 注意：可部署AriaNg进行直观监察
-部署
+
+## 部署
+
 配置完成后直接python main.py即可~
-功能列表
+
+## 功能列表
+
 爬虫
 
-scrapy方向
+- [ ] 	scrapy方向
 
+- [ ] 	反爬虫
 
-反爬虫
-
-
+<br/>
 
 记录信息
-txt本地测试
-mysql上机
 
+- [ ] 	txt本地测试
+- [ ] 	mysql上机
+
+<br/>
 
 Request
-提交下载表单
 
+- [x] 提交下载表单
+
+<br/>
 
 拓展
-监视上传任务
-多线程+多代理
-分布式
+
+- [ ] 	监视上传任务
+- [ ] 	多线程+多代理
+- [ ] 	分布式
