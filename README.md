@@ -28,7 +28,7 @@
 
 记录信息
 
-- [ ] 	txt本地测试
+- [x] 	txt本地测试
 - [ ] 	mysql上机
 
 Request
