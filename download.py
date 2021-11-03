@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2021/10/30
+# @Author  : lcvy
+# @File    : download.py
+# @Software: PyCharm
+# @Python3.8
 import requests
 import json
 
