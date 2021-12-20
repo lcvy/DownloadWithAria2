@@ -60,7 +60,7 @@ def ariato():
 class soup:
 
     for sentry in range(50,1,-1):
-        list = requests.get("https://sukebei.nyaa.si/?p="+str(sentry))
+        list = requests.get("*****"+str(sentry))  ##url
         soup = BeautifulSoup(list.content, "lxml")
 
         body = soup.find('tbody')
