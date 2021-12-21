@@ -53,10 +53,13 @@ class test:
     list = requests.get(url)
     soup = BeautifulSoup(list.content, "lxml")
 
-    page_place = soup.find("ul", attrs={"class": "pagination"})
-    page = page_place.find_all("li")
-    page_max = int(page[-2].text)
-
+    try:
+        page_place = soup.find("ul", attrs={"class": "pagination"})
+        page = page_place.find_all("li")
+        page_max = int(page[-2].text)
+    except:
+        page_max = 1
+        
     for sentry in range(page_max,1,-1):
         list = requests.get(url+"&p="+str(sentry))
         soup = BeautifulSoup(list.content, "lxml")
